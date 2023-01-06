@@ -1,5 +1,5 @@
 # suninfo
-A wrapper for PHP's native sun_info including soltice times.
+A wrapper for PHP's native sun_info including solstice times.
 
 ## usage
 ```
