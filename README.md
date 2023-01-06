@@ -6,9 +6,7 @@ A wrapper for PHP's native sun_info including soltice times.
 $timestamp = time();
 $latitude = -0.4319317;
 $longitude = 51.5286051;
-$dtz = new \DateTimeZone('Europe/London');
 
-// get sun-info
 include {path to suninfo} . '/suninfo.php';
 $suninfo = new \basecamp\suninfo($timestamp, $latitude, $longitude);
 
@@ -17,3 +15,5 @@ foreach($suninfo->solstices as $event) {
 	echo implode("\t", $event) . "\n";
 }
 ```
+
+See `example.php` for a better example.
