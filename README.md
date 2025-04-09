@@ -2,6 +2,7 @@
 A wrapper for PHP's native sun_info including solstice times.
 
 version 1.1
+
 date: 2025-04-09
 
 ## usage
