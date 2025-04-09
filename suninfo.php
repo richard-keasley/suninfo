@@ -25,8 +25,6 @@ function __construct($timestamp=null, $latitude=0, $longitude=0) {
 	];
 	$this->info = \date_sun_info($timestamp, $latitude, $longitude);
 	
-	$this->datetime = new \DateTime();
-	
 	$source = __DIR__ . '/solstices.json';
 	try {
 		$string = file_get_contents($source);
@@ -47,22 +45,22 @@ function __get($key) {
 
 const credit = '<p>Solstice and Equinox table courtesy of Fred Espenak <a href="http://www.astropixels.com/ephemeris/soleq2001.html">www.astropixels.com</a>.</p>';
 
-static function compile() {
-/*
-read solstices.txt into json array
-
-All calculations are by Fred Espenak, and he assumes full 
-responsibility for their accuracy. Algorithms used in 
-predicting Earth's solstices and equinoxes are based on 
-Astronomical Algorithms by Jean Meeus (Willmann-Bell, 
-Inc., Richmond, 1998). 
-
-Permission is freely granted to reproduce this data when 
-accompanied by the acknowledgment: 
-"Solstice and Equinox Table Courtesy of Fred Espenak, 
-www.Astropixels.com".
+/**
+* read solstices.txt into json array
+* 
+* All calculations are by Fred Espenak, and he assumes full 
+* responsibility for their accuracy. Algorithms used in 
+* predicting Earth's solstices and equinoxes are based on 
+* Astronomical Algorithms by Jean Meeus (Willmann-Bell, 
+* Inc., Richmond, 1998). 
+* 
+* Permission is freely granted to reproduce this data when 
+* accompanied by the acknowledgment: 
+* "Solstice and Equinox Table Courtesy of Fred Espenak, 
+* www.Astropixels.com".
 */
-	
+
+static function compile() {
 	// [date parts], [time parts]
 	$map = [
 		3 => [[2, 1, 0], [3]],
@@ -102,4 +100,3 @@ www.Astropixels.com".
 }
 
 }
-
