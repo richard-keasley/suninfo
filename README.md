@@ -5,6 +5,10 @@ version 1.1
 
 date: 2025-04-09
 
+## credits 
+
+Solstice and Equinox table courtesy of Fred Espenak [http://www.astropixels.com/ephemeris/soleq2001.html]
+
 ## usage
 ```
 $timestamp = time();
