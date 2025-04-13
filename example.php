@@ -15,7 +15,7 @@ $dtz = new \DateTimeZone('Europe/London');
 // get sun-info
 include __DIR__ . '/suninfo.php';
 $suninfo = new \basecamp\suninfo($timestamp, $latitude, $longitude);
-$datetime = new \Datetime(null, $dtz);
+$datetime = new \Datetime('', $dtz);
 
 // PHP date_sun_info
 foreach($suninfo->info as $key=>$val) {
