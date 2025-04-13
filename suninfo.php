@@ -43,7 +43,7 @@ function __get($key) {
 	return $this->params[$key] ?? null;
 }
 
-const credit = '<p>Solstice and Equinox table courtesy of Fred Espenak <a href="http://www.astropixels.com/ephemeris/soleq2001.html">www.astropixels.com</a>.</p>';
+const credit = '<p>Solstice and Equinox table courtesy of Fred Espenak <a href="https://www.astropixels.com/ephemeris/soleq2001.html">www.astropixels.com</a>.</p>';
 
 /**
 * read solstices.txt into json array
